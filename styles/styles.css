@@ -1,0 +1,295 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4,
+h5 {
+  font-size: 2rem;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+p {
+  font-weight: 300;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #92bb41;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-head {
+  position: fixed;
+  border-radius: 50px;
+  top: 10px;
+  width: 95%;
+  height: 10vh;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: true;
+      flex-wrap: true;
+  background-color: rgba(128, 128, 128, 0.699);
+}
+
+.main-head ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-head li a {
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 2rem;
+  padding: 1.5rem 2.5rem;
+  margin: 0rem 1.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.acive {
+  padding: 0.4rem 1rem;
+  font-weight: 300;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: ghostwhite;
+  opacity: 0.5;
+  border-radius: 15px;
+}
+
+.main-head li a:hover {
+  padding: 0.4rem 1rem;
+  font-weight: 300;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: ghostwhite;
+  opacity: 0.5;
+  border-radius: 15px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e8e7ee;
+}
+
+.logo img {
+  margin: 1rem 1rem;
+  height: 8vh;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-animation: bganimation 8s ease infinite alternate;
+          animation: bganimation 8s ease infinite alternate;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  max-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -100;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.hero {
+  padding: 0rem 12rem;
+  background: radial-gradient(circle, rgba(255, 255, 36, 0.1) 46%, rgba(0, 0, 0, 0.5) 100%);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  min-height: 65vh;
+  padding: 1rem 1rem;
+  background-color: rgba(128, 128, 128, 0.699);
+  width: 40%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #e8e7ee;
+  border-radius: 15px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 10px 5px 25px rgba(25, 25, 25, 0.4);
+          box-shadow: 10px 5px 25px rgba(25, 25, 25, 0.4);
+}
+
+#portrait-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  width: 55vh;
+  height: 35vh;
+  border-radius: 50px;
+  -webkit-box-shadow: 10px 5px 25px rgba(25, 25, 25, 0.4);
+          box-shadow: 10px 5px 25px rgba(25, 25, 25, 0.4);
+}
+
+.heroright img {
+  -webkit-box-shadow: 10px 5px 25px rgba(25, 25, 25, 0.4);
+          box-shadow: 10px 5px 25px rgba(25, 25, 25, 0.4);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0px 30px;
+     object-position: 0px 30px;
+  height: 45vh;
+}
+
+.heroright img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.CTA {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: bganimation 5s ease infinite alternate;
+          animation: bganimation 5s ease infinite alternate;
+}
+
+.CTA:hover {
+  padding: 0.5rem 1rem;
+  background-color: #ccff65;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#logo-text {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  font-weight: 200;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@-webkit-keyframes bganimation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes bganimation {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.me {
+  min-height: 100vh;
+  background-color: yellow;
+}
+/*# sourceMappingURL=styles.css.map */
